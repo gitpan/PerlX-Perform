@@ -1,20 +1,27 @@
 package PerlX::Perform;
 
-use 5.010;
-use common::sense;
-use utf8;
+use 5.006;
+use strict;
 
-use Scalar::Util qw/blessed/;
-
-our @EXPORT;
+our (@EXPORT, @ISA);
 BEGIN {
 	$PerlX::Perform::AUTHORITY = 'cpan:TOBYINK';
-	$PerlX::Perform::VERSION   = '0.001';
+	$PerlX::Perform::VERSION   = '0.002';
 	
+	require Exporter;
+	@ISA    = qw/Exporter/;
 	@EXPORT = qw/perform wherever/;
 }
 
-use parent qw/Exporter/;
+sub blessed ($)
+{
+	my $thing = shift;
+	if (ref $thing and UNIVERSAL::can($thing, 'can'))
+	{
+		return (ref($thing) || $thing || 1);
+	}
+	return;
+}
 
 sub perform (&;$)
 {
@@ -56,17 +63,14 @@ sub wherever ($;@)
 
 package PerlX::Perform::Manifesto;
 
-use 5.010;
-use common::sense;
-use utf8;
-
-use Scalar::Util qw/blessed/;
+use 5.006;
+use strict;
 
 sub new
 {
 	my ($class, $code) = @_;
 	
-	if (blessed $code and $code->isa(__PACKAGE__))
+	if (PerlX::Perform::blessed $code and $code->isa(__PACKAGE__))
 	{
 		return $code;
 	}
@@ -182,6 +186,12 @@ already-blessed coderefs, this will work too:
 
 Both C<perform> and C<wherever> make extensive use of C<goto> in order to
 conceal their usage on the call stack.
+
+=begin private
+
+=item blessed
+
+=end private
 
 =head1 BUGS
 

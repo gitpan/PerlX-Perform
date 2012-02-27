@@ -14,10 +14,10 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 86b79e5f831e40e548b07776c737c06b518cb427 Changes
+SHA1 364f036ca1fadab665a7336fcf262090c6c7d402 Changes
 SHA1 1d54db0b8134eb1c8ea0cee400f9dc612bcaa61a LICENSE
 SHA1 21ffc3de21d32d10c6e41f03a60142def108771f MANIFEST
-SHA1 89760326e6d23a3801d1f434e4eca6b9354c949f META.yml
+SHA1 c56a7d3036bc173a6a066d1acced4675ee7a8b11 META.yml
 SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
 SHA1 ede08757eae1fc511d73382953d9e214c7c19174 README
 SHA1 93d8ab1b3c4ade5f449519bc6bf35a4b0cbc355c examples/syntax.pl
@@ -37,12 +37,12 @@ SHA1 1326052d1df1065debee74f9d8583a734b9b3d00 inc/Module/Install/Win32.pm
 SHA1 bb607f3715c40fc3bc1c46496587cdb215bc4fa2 inc/Module/Install/WriteAll.pm
 SHA1 26d58a041cd6b3d21db98b32e8fd1841aae21204 inc/Module/Package.pm
 SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
-SHA1 775bd24f2fdbb6dce51a8b5b0cdb01fccfce83c4 inc/Scalar/Util.pm
-SHA1 b1b664983568bf822c327599eb88e223483ae96a inc/Scalar/Util/PP.pm
+SHA1 e31c281782183601e1e057c5914f63269e043932 inc/Scalar/Util.pm
+SHA1 5eae2f71c45a996a296d2445b18d0589307111f0 inc/Scalar/Util/PP.pm
 SHA1 eef6bff62046bff2ce08ba132d0b58fba30f40b4 inc/YAML/Tiny.pm
-SHA1 7047d32054f11519afd184eec729793593d97feb lib/PerlX/Perform.pm
-SHA1 4c282f9f543c2134caa7bcc3a7a6b3d1e22449ee lib/Syntax/Feature/Perform.pm
-SHA1 e1867bfd46334db2316f306aff6f3473558bdb51 meta/changes.ttl
+SHA1 cd71e7fb0fbeb217fe12917b3310bb90eb2662f0 lib/PerlX/Perform.pm
+SHA1 dd9e1c0ef166a9931c121eaecbcbea4a1107265b lib/Syntax/Feature/Perform.pm
+SHA1 655deff2cb32d2223ae679a7ffa6b77349bb478f meta/changes.ttl
 SHA1 7ba0e245f360286d5270df6de4bff9cf3071cf15 meta/doap.ttl
 SHA1 202e1cff9769b0a5c9b8a895d9305827bff52e0e meta/makefile.ttl
 SHA1 c2e1c41b671f478e48cbf47ba00c6a6af4f687ee t/01basic.t
@@ -50,7 +50,7 @@ SHA1 67b435df3d9e95fa9179b971de12800a121bbaf0 t/02performing.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAk8wQ5kACgkQzr+BKGoqfTk/CgCgjK4kzOhxYcXGgln5peRgS7LV
-RP0Anj1fuUwF57YFc/lBys3NZCuTD+8T
-=wJtO
+iEYEARECAAYFAk9MBOkACgkQzr+BKGoqfTl7ZwCgn5Sl68nUxPIQPY0jMmjJyqAT
+ffIAoJLn2lVG1gdsyLQxJrBRtJPD0+Nw
+=2tqh
 -----END PGP SIGNATURE-----
