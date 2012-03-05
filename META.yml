@@ -23,6 +23,7 @@ no_index:
     - t
     - xt
 requires:
+  Exporter: 0
   perl: 5.6.0
   strict: 0
 resources:
@@ -30,4 +31,4 @@ resources:
   homepage: https://metacpan.org/release/PerlX-Perform
   license: http://dev.perl.org/licenses/
   repository: https://bitbucket.org/tobyink/p5-perlx-perform
-version: 0.003
+version: 0.004

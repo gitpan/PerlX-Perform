@@ -14,12 +14,12 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 cc8c1aeb10cd121e57b74f72ba047f4de9ec36a3 Changes
+SHA1 15620830f97455440f03c56e2e32e03d7b3c02a8 Changes
 SHA1 1d54db0b8134eb1c8ea0cee400f9dc612bcaa61a LICENSE
-SHA1 21ffc3de21d32d10c6e41f03a60142def108771f MANIFEST
-SHA1 d9d84a029b2749a40e563cedb3d0a00728ac388d META.yml
+SHA1 9a11c88b2a91eba6ad71f1d17c6db756606c9fea MANIFEST
+SHA1 fdd4062baa72e03176055f673ec5e33e81f9d727 META.yml
 SHA1 7150e5e086ef493e1e527a1eeec44a8344b80db6 Makefile.PL
-SHA1 ede08757eae1fc511d73382953d9e214c7c19174 README
+SHA1 c19a094d7bf1545bf0b1974aa563fa4257bb97f4 README
 SHA1 93d8ab1b3c4ade5f449519bc6bf35a4b0cbc355c examples/syntax.pl
 SHA1 5d94bc10deff1dd74e4bc5dfa6fc015e39271f15 inc/Module/AutoInstall.pm
 SHA1 40106479d4e07f379cb82ca1d69fca92e3a40f47 inc/Module/Install.pm
@@ -40,17 +40,19 @@ SHA1 6b807287940754cc31a3db59f2b22e363d5525be inc/Module/Package/Dist/RDF.pm
 SHA1 e31c281782183601e1e057c5914f63269e043932 inc/Scalar/Util.pm
 SHA1 5eae2f71c45a996a296d2445b18d0589307111f0 inc/Scalar/Util/PP.pm
 SHA1 eef6bff62046bff2ce08ba132d0b58fba30f40b4 inc/YAML/Tiny.pm
-SHA1 589d56e66959e4a21c907a92c9b3ae39fafb258f lib/PerlX/Perform.pm
-SHA1 83228e2d54e2946af4543667aea36aef2c306b4f lib/Syntax/Feature/Perform.pm
-SHA1 9880587711bd85a2c75eeda3cd2bdaec5b881ec0 meta/changes.ttl
+SHA1 f33e02a774cd4234547a8506b5f1fe4b0059f2fd lib/PerlX/Perform.pm
+SHA1 6f8865bac5837af641a9fd90d5b0aa241cf1631b lib/Syntax/Feature/Perform.pm
+SHA1 14d8dec57d366e205865df3cda6b232771fcac4d meta/changes.ttl
 SHA1 7ba0e245f360286d5270df6de4bff9cf3071cf15 meta/doap.ttl
-SHA1 54eaf4ba3bf9ad3f1b4e00fef3fc5ac3d85304d7 meta/makefile.ttl
+SHA1 5b52040fdac00337f07089b86aaf5a8b5b215d00 meta/makefile.ttl
+SHA1 541ff4f660f94fe1c3f59ec048eaec68d338d682 meta/rt-bugs.ttl
 SHA1 c2e1c41b671f478e48cbf47ba00c6a6af4f687ee t/01basic.t
 SHA1 67b435df3d9e95fa9179b971de12800a121bbaf0 t/02performing.t
+SHA1 9c5dccaa055d6dfd01380f100fc36d973c42f16e t/03whenever.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAk9MBkEACgkQzr+BKGoqfTmS1ACfR0kFCraE8naKnTLHkTDksuDQ
-Y4YAn0isTvoNZXNNpivdy9wweJD1h9UZ
-=Kkkz
+iEYEARECAAYFAk9UkWYACgkQzr+BKGoqfTlMaACgipQ75th6ybPJxhbebgLI3VNf
++hoAnRdD2y3MmUZ/uelQKBDE2gjIODY0
+=TF45
 -----END PGP SIGNATURE-----

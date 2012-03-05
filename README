@@ -84,14 +84,21 @@ DESCRIPTION
     Both "perform" and "wherever" make extensive use of "goto" in order to
     conceal their usage on the call stack.
 
+  whenever
+    This is available as an alias for "wherever", but is not exported by
+    default. You need to request it like:
+
+     use PerlX::Perform qw/perform whenever/;
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=PerlX-Perform>.
 
 SEE ALSO
-    I can't see any similar modules on CPAN to link to here.
+    "/www.modernperlbooks.com
+    /mt/2012/02/a-practical-use-for-macros-in-perl.html" in http:.
 
-    That probably means that this one was a bad idea too.
+    Scalar::Andand.
 
 AUTHOR
     Toby Inkster <tobyink@cpan.org>.

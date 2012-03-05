@@ -3,14 +3,21 @@ package PerlX::Perform;
 use 5.006;
 use strict;
 
-our (@EXPORT, @ISA);
+our (@EXPORT, @EXPORT_OK, %EXPORT_TAGS, @ISA);
 BEGIN {
 	$PerlX::Perform::AUTHORITY = 'cpan:TOBYINK';
-	$PerlX::Perform::VERSION   = '0.003';
+	$PerlX::Perform::VERSION   = '0.004';
 	
 	require Exporter;
-	@ISA    = qw/Exporter/;
-	@EXPORT = qw/perform wherever/;
+	@ISA       = qw/Exporter/;
+	@EXPORT    = qw/perform wherever/;
+	@EXPORT_OK = qw/perform wherever whenever/;
+	%EXPORT_TAGS = (
+		default   => \@EXPORT,
+		all       => \@EXPORT_OK,
+		wherever  => [qw/perform wherever/],
+		whenever  => [qw/perform whenever/],
+		);
 }
 
 sub blessed ($)
@@ -60,6 +67,8 @@ sub wherever ($;@)
 	}
 	return $thing;
 }
+
+*whenever = \&wherever;
 
 package PerlX::Perform::Manifesto;
 
@@ -193,6 +202,13 @@ conceal their usage on the call stack.
 
 =end private
 
+=head2 whenever
+
+This is available as an alias for C<wherever>, but is not exported by default.
+You need to request it like:
+
+ use PerlX::Perform qw/perform whenever/;
+
 =head1 BUGS
 
 Please report any bugs to
@@ -200,9 +216,9 @@ L<http://rt.cpan.org/Dist/Display.html?Queue=PerlX-Perform>.
 
 =head1 SEE ALSO
 
-I can't see any similar modules on CPAN to link to here.
+L<http://www.modernperlbooks.com /mt/2012/02/a-practical-use-for-macros-in-perl.html>.
 
-That probably means that this one was a bad idea too.
+L<Scalar::Andand>.
 
 =head1 AUTHOR
 

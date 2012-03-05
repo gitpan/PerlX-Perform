@@ -12,7 +12,7 @@
 	:test_requires
 		"Test::More 0.61";
 	:requires
-		"strict".
+		"strict", "Exporter".
 
 _:main <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#fileName> "lib/PerlX/Perform.pm" .
 
