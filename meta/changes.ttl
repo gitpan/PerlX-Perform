@@ -38,3 +38,14 @@ dist:v_0-004
 		dcs:item   [ rdfs:label "Add 'whenever' as an alias for 'wherever'."@en ; a dcs:Addition ];
 		dcs:item   [ rdfs:label "%EXPORT_TAGS now has tags :default, :all, :wherever and :whenever."@en ]
 		].
+
+dist:project :release dist:v_0-005 .
+dist:v_0-005
+	a               :Version ;
+	dc:issued       "2012-03-05"^^xsd:date ;
+	:revision       "0.005"^^xsd:string ;
+	:file-release   <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/PerlX-Perform-0.005.tar.gz> ;
+	dcs:changeset [
+		dcs:versus dist:v_0-004;
+		dcs:item   [ rdfs:label "Remove space incorrectly included in a POD L<...> link."@en ; a dcs:Bugfix,dcs:Documentation ];
+		].

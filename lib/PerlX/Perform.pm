@@ -6,7 +6,7 @@ use strict;
 our (@EXPORT, @EXPORT_OK, %EXPORT_TAGS, @ISA);
 BEGIN {
 	$PerlX::Perform::AUTHORITY = 'cpan:TOBYINK';
-	$PerlX::Perform::VERSION   = '0.004';
+	$PerlX::Perform::VERSION   = '0.005';
 	
 	require Exporter;
 	@ISA       = qw/Exporter/;
@@ -216,7 +216,7 @@ L<http://rt.cpan.org/Dist/Display.html?Queue=PerlX-Perform>.
 
 =head1 SEE ALSO
 
-L<http://www.modernperlbooks.com /mt/2012/02/a-practical-use-for-macros-in-perl.html>.
+L<http://www.modernperlbooks.com/mt/2012/02/a-practical-use-for-macros-in-perl.html>.
 
 L<Scalar::Andand>.
 
